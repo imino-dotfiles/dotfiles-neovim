@@ -25,4 +25,8 @@ function symlink() {
   symlink $SCRIPT_DIR/dein/coc-settings.json $NVIM/coc-setings.json
   symlink $SCRIPT_DIR/nvim/init.vim $NVIM/init.vim
 
-}           
+}
+
+: "post stuff"
+{
+  nvim -c "UpdateRemotePlugin"
