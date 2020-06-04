@@ -4,7 +4,9 @@
 # Requires neovim and curl
 #
 
-: "export"
+set -x
+
+: "export" &&
 {
   export NVIM="$HOME/.config/nvim"
   export DEIN="$HOME/.cache/dein"
@@ -15,7 +17,7 @@ function symlink() {
   ln -sf $1 $2
 }
 
-: "link"
+: "link" &&
 {
 
   symlink $SCRIPT_DIR/dein/dein.toml $NVIM/dein.toml
@@ -27,6 +29,10 @@ function symlink() {
 
 }
 
-: "post stuff"
+: "post stuff" &&
 {
+
   nvim -c "UpdateRemotePlugin"
+  nvim -c "UpdateRemotePlugin"
+
+}
