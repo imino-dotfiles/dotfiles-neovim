@@ -33,6 +33,6 @@ function symlink() {
 {
 
   nvim -c "UpdateRemotePlugin"
-  nvim -c "UpdateRemotePlugin"
+  nvim -c "UpdateRemotePlugins"
 
 }
