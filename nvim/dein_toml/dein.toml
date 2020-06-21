@@ -1,0 +1,57 @@
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+[[plugins]]
+repo = 'preservim/nerdtree'
+
+[[plugins]]
+repo = 'cocopon/iceberg.vim'
+hook_add = '''
+  colorscheme iceberg 
+  let g:lightline = {
+      \ 'colorscheme': 'iceberg',
+      \ }
+'''
+
+[[plugins]]
+repo = 'dense-analysis/ale'
+hook_add = '''
+  highlight clear ALEError
+  highlight clear ALEWarning
+  let g:ale_lint_on_enter = 0
+  let g:ale_sign_column_always = 1
+  let g:ale_set_loclist = 0
+  let g:ale_set_quickfix = 1
+'''
+
+[[plugins]]
+repo = 'Shougo/denite.nvim'
+hook_add = '''
+  source ~/.config/nvim/denite.vim
+'''
+
+[[plugins]]
+repo = 'Shougo/deoppet.nvim'
+
+
+[[plugins]]
+repo = 'mattn/webapi-vim'
+
+[[plugins]]
+repo = 'Shougo/deol.nvim'
+hook_add='''
+  let g:deol#shell_history_path = '~/.local/share/fish/fish_history'
+  nnoremap <silent> <leader>r :Deol -split=floating<CR>
+'''
+
+[[plugins]]
+repo = 'kana/vim-metarw'
+
+[[plugins]]
+repo = 'itchyny/lightline.vim'
+hook_add = '''
+  source ~/.config/nvim/lightline.vim
+'''
+
+[[plugins]]
+repo = 'emonkak/vim-metarw-gist'

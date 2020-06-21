@@ -1,5 +1,5 @@
 let g:lightline = {
-      \ 'colorscheme': 'wombat',
+      \ 'colorscheme': 'iceberg',
       \ }
 let g:lightline.inactive = {
     \ 'left': [ [ 'filename' ] ],
