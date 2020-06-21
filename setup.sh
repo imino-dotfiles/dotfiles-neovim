@@ -28,8 +28,8 @@ set -x
 
 : "postprocess" &&
 {
-  source ./setup/post.sh
-  # nvim -c "UpdateRemotePlugin"
-  # nvim -c "UpdateRemotePlugin"
+
+  nvim -c "UpdateRemotePlugin"
+  nvim -c "UpdateRemotePlugins"
 
 }

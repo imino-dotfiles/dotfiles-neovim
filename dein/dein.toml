@@ -22,7 +22,7 @@ hook_add = '''
 [[plugins]]
 repo = 'Shougo/denite.nvim'
 hook_add = '''
-              source $NVIM/denite.vim
+              source ~/.config/nvim/denite.vim
               '''
 
 [[plugins]]
@@ -35,8 +35,8 @@ repo = 'mattn/webapi-vim'
 [[plugins]]
 repo = 'Shougo/deol.nvim'
 hook_add='''
-let g:deol#shell_history_path = '~/.zsh_history'
-nnoremap <C-d>t :Deol -split=floating
+let g:deol#shell_history_path = '~/.local/share/fish/fish_history'
+nnoremap <silent> <leader>r :Deol -split=floating<CR>
 '''
 
 [[plugins]]
@@ -45,7 +45,7 @@ repo = 'kana/vim-metarw'
 [[plugins]]
 repo = 'itchyny/lightline.vim'
 hook_add = '''
-              source $NVIM/lightline.vim
+              source ~/.config/nvim/lightline.vim
               '''
 
 [[plugins]]
