@@ -15,39 +15,9 @@ set clipboard+=unnamedplus
 nnoremap <Esc><Esc> :nohlsearch<CR><Esc>
 
 "------------------------------------------------------------
-"Neovide GUI Client Settings
-let g:neovide_transparency=0.2
-let g:neovide_cursor_antialiasing=v:true
-set guifont=JetBrains\ Mono\ Ret:h13
-
-"------------------------------------------------------------
-
-"------------------------------------------------------------
 "NERDTree Settings
 nnoremap <C-e> :NERDTreeToggle<CR>
 let NERDTreeShowHidden=1
-
-"------------------------------------------------------------
-
-"------------------------------------------------------------
-"NyaoVim settings
-
-let s:on_nyaovim = exists('g:nyaovim_version')
-
-function! s:get_SID()
-    return matchstr(expand('<sfile>'), '<SNR>\d\+_\zeget_SID$')
-endfunction
-let s:SID = s:get_SID()
-delfunction s:get_SID
-
-" Vimrc augroup
-augroup MyVimrc
-    autocmd!
-augroup END
-command! -nargs=* Autocmd autocmd MyVimrc <args>
-command! -nargs=* AutocmdFT autocmd MyVimrc FileType <args>
-Autocmd VimEnter,WinEnter init.vim,nvimrc syn keyword myVimAutocmd Autocmd AutocmdFT contained containedin=vimIsCommand
-Autocmd ColorScheme * highlight def link myVimAutocmd vimAutoCmd
 
 "------------------------------------------------------------
 
