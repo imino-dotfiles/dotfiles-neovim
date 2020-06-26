@@ -27,7 +27,7 @@ hook_add = '''
 [[plugins]]
 repo = 'Shougo/denite.nvim'
 hook_add = '''
-  source ~/.config/nvim/denite.vim
+  source ~/.config/nvim/plugin_settings/denite.vim
 '''
 
 [[plugins]]
@@ -50,7 +50,7 @@ repo = 'kana/vim-metarw'
 [[plugins]]
 repo = 'itchyny/lightline.vim'
 hook_add = '''
-  source ~/.config/nvim/lightline.vim
+  source ~/.config/nvim/plugin_settings/lightline.vim
 '''
 
 [[plugins]]
