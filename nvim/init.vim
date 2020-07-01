@@ -119,3 +119,5 @@ endif
 let g:dein#auto_recache = 1
 
 colorscheme iceberg
+
+source ~/.config/nvim/init_vim/nvim_qt.vim
