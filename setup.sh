@@ -4,6 +4,8 @@
 # Requires neovim and curl
 #
 
-source ./setup/export.sh
-source ./setup/symlink.sh
-source ./setup/post.sh
+export CWD="$(pwd)"
+
+source $CWD/setup/export.sh
+source $CWD/setup/symlink.sh
+source $CWD/setup/post.sh
