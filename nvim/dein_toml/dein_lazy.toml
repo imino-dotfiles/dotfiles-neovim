@@ -11,9 +11,3 @@ let g:sonictemplate_vim_template_dir = [
       \ '$NVIM/sonictemplate'
       \]
 '''
-
-[[plugins]]
-repo = 'neoclide/coc.nvim'
-rev = 'release'
-merged = '0'
-hook_post_source = 'call config#init#coc#hook_source()'

@@ -8,9 +8,6 @@ repo = 'preservim/nerdtree'
 repo = 'cocopon/iceberg.vim'
 hook_add = '''
   colorscheme iceberg 
-  let g:lightline = {
-      \ 'colorscheme': 'iceberg',
-      \ }
 '''
 
 [[plugins]]
@@ -31,8 +28,13 @@ hook_add = '''
 '''
 
 [[plugins]]
+repo = 'Shougo/neoyank.vim'
+
+[[plugins]]
 repo = 'Shougo/deoppet.nvim'
 
+[[plugins]]
+repo = 'Shougo/neomru.vim'
 
 [[plugins]]
 repo = 'mattn/webapi-vim'
@@ -55,3 +57,11 @@ hook_add = '''
 
 [[plugins]]
 repo = 'emonkak/vim-metarw-gist'
+
+[[plugins]]
+repo = 'neoclide/coc.nvim'
+rev = 'release'
+merged = '0'
+hook_add = '''
+  source ~/.config/nvim/plugin_settings/lightline.vim
+'''

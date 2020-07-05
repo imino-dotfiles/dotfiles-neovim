@@ -1,1 +1,1 @@
-set guifont=JetBrains\ Mono:h13
+set guifont=JetBrainsMono\ Nerd\ Font:h13

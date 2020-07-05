@@ -1,5 +1,7 @@
 let g:lightline = {
       \ 'colorscheme': 'iceberg',
+      \ 'separator': { 'left': "\ue0b0", 'right': "\ue0b2" },
+      \ 'subseparator': { 'left': "\ue0b1", 'right': "\ue0b3" }
       \ }
 let g:lightline.inactive = {
     \ 'left': [ [ 'filename' ] ],
