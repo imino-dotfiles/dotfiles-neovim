@@ -2,7 +2,10 @@
 repo = 'Shougo/dein.vim'
 
 [[plugins]]
-repo = 'preservim/nerdtree'
+repo = 'Shougo/defx.nvim'
+hook_add = '''
+  source ~/.config/nvim/plugin_settings/defx.vim
+'''
 
 [[plugins]]
 repo = 'cocopon/iceberg.vim'
@@ -63,5 +66,5 @@ repo = 'neoclide/coc.nvim'
 rev = 'release'
 merged = '0'
 hook_add = '''
-  source ~/.config/nvim/plugin_settings/lightline.vim
+  source ~/.config/nvim/plugin_settings/coc.vim
 '''

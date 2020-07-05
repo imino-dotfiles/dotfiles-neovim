@@ -14,14 +14,6 @@ set clipboard+=unnamedplus
 
 nnoremap <Esc><Esc> :nohlsearch<CR><Esc>
 
-"------------------------------------------------------------
-"NERDTree Settings
-nnoremap <C-e> :NERDTreeToggle<CR>
-let NERDTreeShowHidden=1
-
-"------------------------------------------------------------
-
-"------------------------------------------------------------
 "Tab pages Scripts
 
 " Anywhere SID.

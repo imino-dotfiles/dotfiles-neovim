@@ -1,1 +1,1 @@
-command RecentFile Denite file-mru
+command RecentFile Denite file_mru
