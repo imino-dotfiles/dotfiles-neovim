@@ -1,7 +1,3 @@
-nnoremap <Esc><Esc> :nohlsearch<CR><Esc>
-
-colorscheme iceberg
-
 source ~/.config/nvim/init_vim/set.vim
 
 source ~/.config/nvim/init_vim/keybind.vim

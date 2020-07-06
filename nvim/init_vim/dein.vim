@@ -21,6 +21,10 @@ if dein#load_state(s:dein_dir)
   " 起動時に読み込むプラグイン群
   call dein#load_toml(s:toml_dir . '/dein.toml', {'lazy': 0})
 
+  call dein#load_toml(s:toml_dir . '/denite.toml', {'lazy': 0})
+
+  call dein#load_toml(s:toml_dir . '/defx.toml', {'lazy': 0})
+
   " 遅延読み込みしたいプラグイン群
   call dein#load_toml(s:toml_dir . '/dein_lazy.toml', {'lazy': 1})
 

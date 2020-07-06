@@ -2,10 +2,7 @@
 repo = 'Shougo/dein.vim'
 
 [[plugins]]
-repo = 'Shougo/defx.nvim'
-hook_add = '''
-  source ~/.config/nvim/plugin_settings/defx.vim
-'''
+repo = 'ryanoasis/vim-devicons'
 
 [[plugins]]
 repo = 'cocopon/iceberg.vim'
@@ -25,19 +22,7 @@ hook_add = '''
 '''
 
 [[plugins]]
-repo = 'Shougo/denite.nvim'
-hook_add = '''
-  source ~/.config/nvim/plugin_settings/denite.vim
-'''
-
-[[plugins]]
-repo = 'Shougo/neoyank.vim'
-
-[[plugins]]
 repo = 'Shougo/deoppet.nvim'
-
-[[plugins]]
-repo = 'Shougo/neomru.vim'
 
 [[plugins]]
 repo = 'mattn/webapi-vim'

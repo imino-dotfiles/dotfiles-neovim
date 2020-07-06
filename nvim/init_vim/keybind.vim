@@ -1,7 +1,7 @@
-nnoremap h gh
+nnoremap <Esc><Esc> :nohlsearch<CR><Esc>
+
 nnoremap j gj
 nnoremap k gk
-nnoremap l gl
 
 nnoremap <Left> :echoe "Use h"<CR>
 nnoremap <Right> :echoe "Use l"<CR>
