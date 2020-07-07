@@ -5,6 +5,9 @@ hook_add = '''
 '''
 
 [[plugins]]
+repo= 'Jagua/vim-denite-ghq'
+
+[[plugins]]
 repo = 'Shougo/neoyank.vim'
 
 [[plugins]]

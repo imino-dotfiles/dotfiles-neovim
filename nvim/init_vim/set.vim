@@ -1,5 +1,7 @@
 set termguicolors
 
+set autochdir
+
 set list listchars=tab:\▸\-
 set expandtab
 set tabstop=2
