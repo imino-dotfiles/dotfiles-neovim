@@ -1,7 +1,10 @@
 {
     "suggest.noselect": true,
     "suggest.preferCompleteThanJumpPlaceholder": true,
-    
+    "coc.preferences.formatOnSaveFiletypes": [
+                                               "dart", 
+                                               "haskell"
+                                             ],
     "languageserver": {
     
         "golang": {

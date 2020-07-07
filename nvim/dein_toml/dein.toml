@@ -31,7 +31,7 @@ repo = 'mattn/webapi-vim'
 repo = 'Shougo/deol.nvim'
 hook_add='''
   let g:deol#shell_history_path = '~/.local/share/fish/fish_history'
-  nnoremap <silent> <leader>r :Deol -split=floating<CR>
+  nnoremap <silent> <leader>df :Deol -split=floating<CR>
 '''
 
 [[plugins]]
@@ -42,6 +42,9 @@ repo = 'itchyny/lightline.vim'
 hook_add = '''
   source ~/.config/nvim/plugin_settings/lightline.vim
 '''
+
+[[plugins]]
+repo = 'thosakwe/vim-flutter'
 
 [[plugins]]
 repo = 'emonkak/vim-metarw-gist'
