@@ -23,6 +23,9 @@ hook_add = '''
 
 [[plugins]]
 repo = 'Shougo/deoppet.nvim'
+hook_add = '''
+  source ~/.config/nvim/plugin_settings/deoppet.vim
+'''
 
 [[plugins]]
 repo = 'mattn/webapi-vim'
@@ -31,7 +34,7 @@ repo = 'mattn/webapi-vim'
 repo = 'Shougo/deol.nvim'
 hook_add='''
   let g:deol#shell_history_path = '~/.local/share/fish/fish_history'
-  nnoremap <silent> <leader>df :Deol -split=floating<CR>
+  nnoremap <silent> <leader>dl :Deol -split=floating<CR>
 '''
 
 [[plugins]]

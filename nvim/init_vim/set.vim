@@ -1,6 +1,6 @@
 set termguicolors
 
-set autochdir
+set noshowmode
 
 set list listchars=tab:\▸\-
 set expandtab
