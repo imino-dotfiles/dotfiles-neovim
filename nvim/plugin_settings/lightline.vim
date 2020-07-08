@@ -15,7 +15,7 @@ let g:lightline.active = {
     \ 'right': [ [ 'lineinfo' ],
     \            [ 'percent' ],
     \            ['filestatus'],
-    \            ['date'] 
+    \            ['date']
     \          ] }
 
 let g:lightline.component_function = {}
@@ -27,16 +27,14 @@ let g:lightline.component_function['filestatus'] = 'LLfilestatus'
 let g:lightline.component_function['date'] = 'LLdate'
 
 function! LLdate() abort
-    while 1 > 0 
-      return strftime('%T') . ' |'
-      sleep 1
-    endwhile
+    return strftime('%T')
+    sleep 1
 endfunction
 
 function! LLfilestatus() abort
     let fenc = &fenc!=#""?&fenc:&enc
     let ft = &ft!=#""?&ft:"no ft"
-    return &ff . ' | ' . ft . ' | ' . fenc
+    return ft . ' | ' . fenc
 endfunction
 
 function! LLfilename() abort

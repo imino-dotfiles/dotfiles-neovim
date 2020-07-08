@@ -5,6 +5,9 @@ set noshowmode
 set list listchars=tab:\▸\-
 set expandtab
 set tabstop=2
+set pumblend=15
+set winblend=30
+
 set shiftwidth=2
 
 set encoding=utf-8

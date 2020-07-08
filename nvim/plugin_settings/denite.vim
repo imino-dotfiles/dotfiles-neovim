@@ -1,16 +1,24 @@
-nnoremap <Space> [denite]
-nnoremap <Space>p [deniteProject]
-nnoremap <silent> [denite]b :<C-u>Denite buffer<CR>
-nnoremap <silent> [denite]g :<C-u>Denite grep<CR>
-nnoremap <silent> [denite]m :<C-u>Denite file_mru<CR> <silent> <C-u><C-y> :<C-u>Denite neoyank<CR>
-nnoremap <silent> [denite]f :<C-u>Denite file/rec<CR>
-nnoremap <silent> [denite]d :<C-u>Denite directory_rec<CR>
+" nnoremap <Space> [denite]
+" nnoremap <Space>p [deniteProject]
+" nnoremap <silent> [denite]b :<C-u>Denite buffer<CR>
+" nnoremap <silent> [denite]g :<C-u>Denite grep<CR>
+" nnoremap <silent> [denite]m :<C-u>Denite file_mru<CR> <silent> <C-u><C-y> :<C-u>Denite neoyank<CR>
+" nnoremap <silent> [denite]f :<C-u>Denite file/rec<CR>
+" nnoremap <silent> [denite]d :<C-u>Denite directory_rec<CR>
 
-nnoremap <silent> [deniteProject]b :<C-u>DeniteProject buffer<CR>
-nnoremap <silent> [deniteProject]g :<C-u>DeniteProject grep<CR>
-nnoremap <silent> [deniteProject]m :<C-u>DeniteProject file_mru<CR> <silent> <C-u><C-y> :<C-u>Denite neoyank<CR>
-nnoremap <silent> [deniteProject]f :<C-u>DeniteProject file/rec<CR>
-nnoremap <silent> [deniteProject]d :<C-u>DeniteProject directory_rec<CR>
+" nnoremap <silent> [deniteProject]b :<C-u>DeniteProject buffer<CR>
+" nnoremap <silent> [deniteProject]g :<C-u>DeniteProject grep<CR>
+" nnoremap <silent> [deniteProject]m :<C-u>DeniteProject file_mru<CR> <silent> <C-u><C-y> :<C-u>Denite neoyank<CR>
+" nnoremap <silent> [deniteProject]f :<C-u>DeniteProject file/rec<CR>
+" nnoremap <silent> [deniteProject]d :<C-u>DeniteProject directory_rec<CR>
+
+autocmd FileType denite set winblend=30
+autocmd FileType denite-filter set winblend=30
+
+nnoremap <silent> <leader>dnr :Denite file_mru<CR>
+nnoremap <leader>dnc :Denite 
+nnoremap <leader>dnpc :DeniteProject 
+nnoremap <silent> <leader>dng :Denite ghq<CR>
 
 if executable('rg')
     call denite#custom#var('file/rec', 'command', ['rg', '--files', '--glob', '!.git'])
