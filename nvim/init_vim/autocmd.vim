@@ -1,1 +1,1 @@
-autocmd BufReadPre * silent! lcd %:p:h
+autocmd BufEnter * if expand("%:p:h") !~ '^/tmp' | silent! lcd %:p:h | endif

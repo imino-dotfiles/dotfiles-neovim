@@ -15,10 +15,12 @@
 autocmd FileType denite set winblend=30
 autocmd FileType denite-filter set winblend=30
 
-nnoremap <silent> <leader>dnr :Denite file_mru<CR>
-nnoremap <leader>dnc :Denite 
-nnoremap <leader>dnpc :DeniteProject 
-nnoremap <silent> <leader>dng :Denite ghq<CR>
+nnoremap [denite] <Nop>
+nnoremap <Space>dn [denite]
+nnoremap <silent> <Space>dnr :Denite file_mru<CR>
+nnoremap <Space>dnc :Denite 
+nnoremap <Space>dnpc :DeniteProject 
+nnoremap <silent> <Space>dng :Denite ghq<CR>
 
 if executable('rg')
     call denite#custom#var('file/rec', 'command', ['rg', '--files', '--glob', '!.git'])

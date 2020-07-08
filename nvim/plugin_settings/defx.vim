@@ -19,7 +19,7 @@ call defx#custom#option('_', {
       \ 'show_ignored_files': 1,
       \ })
 
-nnoremap <silent> <C-e> :Defx -resume -columns=icons:git:indent:filename:type<CR>
+nnoremap <silent> <Space>df :Defx -resume -columns=icons:git:indent:filename:type<CR>
 
 autocmd BufWritePost * call defx#redraw()
 
