@@ -12,12 +12,6 @@ hook_add = '''
 '''
 
 [[plugins]]
-repo = 'Shougo/deoppet.nvim'
-hook_add = '''
-  source ~/.config/nvim/plugin_settings/deoppet.vim
-'''
-
-[[plugins]]
 repo = 'mattn/webapi-vim'
 
 [[plugins]]

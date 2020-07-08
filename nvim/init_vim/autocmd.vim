@@ -1,1 +1,1 @@
-autocmd BufEnter * silent! lcd %:p:h
+autocmd BufReadPre * silent! lcd %:p:h
