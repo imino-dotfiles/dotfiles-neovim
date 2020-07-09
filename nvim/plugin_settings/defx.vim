@@ -19,7 +19,14 @@ call defx#custom#option('_', {
       \ 'show_ignored_files': 1,
       \ })
 
-nnoremap <silent> <Space>df :Defx -resume -columns=icons:git:indent:filename:type<CR>
+nnoremap [defx] <Nop>
+nmap <Space>df [defx]
+nnoremap <silent> [defx]<Space> :Defx -resume -columns=icons:git:indent:filename:type<CR>
+nnoremap <silent> [defx]f :call s:defx_find_file()<CR>
+
+function! s:defx_find_file() abort
+  return execute(printf('Defx %s -search=%s', expand('%:p:h'), expand('%:p')))
+endfunction
 
 autocmd BufWritePost * call defx#redraw()
 

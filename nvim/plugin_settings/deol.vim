@@ -2,5 +2,7 @@ let g:deol#shell_history_path = '~/.local/share/fish/fish_history'
 
 autocmd FileType deol set winblend=30
 
-nnoremap <silent> <leader>dlf :Deol -split=floating<CR>
+nnoremap [deol] <Nop>
+nmap <Space>dl [deol]
+nnoremap <silent> [deol]f :Deol -split=floating<CR>
 

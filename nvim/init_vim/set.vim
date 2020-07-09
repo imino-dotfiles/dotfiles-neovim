@@ -43,4 +43,5 @@ set termencoding=utf-8
 set fileencoding=utf-8
 set fileencodings=utf-8,cp932,euc-jp
 
+set runtimepath+=~/.config/nvim/user-functions
 set clipboard+=unnamedplus
