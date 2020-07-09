@@ -1,3 +1,3 @@
 nnoremap [coc] <Nop>
-nnoremap <Space>cc [coc]
+nnoremap <Space>coc [coc]
 nnoremap <silent> [coc]l :cocList<CR>

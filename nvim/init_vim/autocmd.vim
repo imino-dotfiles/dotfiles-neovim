@@ -4,5 +4,5 @@ augroup END
 
 augroup init
   autocmd BufEnter * if expand("%:p:h") !~ '^/tmp' | silent! lcd %:p:h | endif
-  autocmd BufEnter * set number
+  autocmd BufEnter * set relativenumber
 augroup END
