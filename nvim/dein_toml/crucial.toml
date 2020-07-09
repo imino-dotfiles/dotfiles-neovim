@@ -1,3 +1,18 @@
+
+[[plugins]]
+repo = 'mbbill/undotree'
+hook_add = '''
+if !exists('g:undotree_WindowLayout')
+    let g:undotree_WindowLayout = 3
+endif
+nnoremap [undotree] <Nop>
+nmap <Space>ut [undotree]
+nnoremap [undotree] :UndotreeToggle<CR>
+'''
+
+[[plugins]]
+repo = 'Yggdroot/indentLine'
+
 [[plugins]]
 repo = 'osyo-manga/vim-precious'
 depends = ['Shougo/context_filetype.vim']

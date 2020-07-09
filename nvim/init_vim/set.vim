@@ -18,12 +18,12 @@ let g:loaded_netrwFileHandlers = 0
 let g:netrw_keepdir=0 
 
 if has('persistent_undo')
-  let s:undodir='~/.config/nvim/undo'
+  let s:undodir = expand('~/.config/nvim/undo')
     if !isdirectory(s:undodir)
         call mkdir(s:undodir, 'p')
     endif
-    set undodir=~/.config/nvim/undo
-  set undofile                                                     
+  set undodir=s:undodir
+  set undofile                                            
 endif
 
 set termguicolors
@@ -36,7 +36,7 @@ set tabstop=2
 set pumblend=15
 set winblend=30
 set shiftwidth=2
-
+set mouse=a
 set encoding=utf-8
 set termencoding=utf-8
 set fileencoding=utf-8

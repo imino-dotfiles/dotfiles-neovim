@@ -21,6 +21,7 @@ nnoremap <silent> [denite]r :Denite file_mru<CR>
 nnoremap <silent> [denite]c :Denite 
 nnoremap <silent> [denite]pc :DeniteProject 
 nnoremap <silent> [denite]g :Denite ghq<CR>
+nnoremap <silent> [denite]h :Denite help<CR>
 
 if executable('rg')
     call denite#custom#var('file/rec', 'command', ['rg', '--files', '--glob', '!.git'])

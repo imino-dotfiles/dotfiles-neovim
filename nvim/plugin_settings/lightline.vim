@@ -26,6 +26,12 @@ let g:lightline.component_function['filestatus'] = 'LLfilestatus'
 
 let g:lightline.component_function['date'] = 'LLdate'
 
+" let g:lightline.component_function['typeicon'] = 'LLtypeicon'
+
+function! LLtypeicon() abort
+    return winwidth(0) > 70 ? WebDevIconsGetFileTypeSymbol() : ''
+endfunction
+
 function! LLdate() abort
     return strftime('%T')
     sleep 1
@@ -38,6 +44,6 @@ function! LLfilestatus() abort
 endfunction
 
 function! LLfilename() abort
-    return expand('%:t')
+    return LLtypeicon() . ' ' . expand('%:t')
 endfunction
 

@@ -12,14 +12,6 @@ hook_add = '''
 '''
 
 [[plugins]]
-repo = 'mbbill/undotree'
-hook_add = '''
-if !exists('g:undotree_WindowLayout')
-    let g:undotree_WindowLayout = 3
-endif
-'''
-
-[[plugins]]
 repo = 'mattn/webapi-vim'
 
 [[plugins]]
