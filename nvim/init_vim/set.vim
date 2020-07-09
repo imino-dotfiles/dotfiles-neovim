@@ -22,7 +22,7 @@ if has('persistent_undo')
     if !isdirectory(s:undodir)
         call mkdir(s:undodir, 'p')
     endif
-  set undodir=s:undodir
+  set undodir=~/.config/nvim/undo
   set undofile                                            
 endif
 
