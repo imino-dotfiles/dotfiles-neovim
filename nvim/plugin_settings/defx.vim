@@ -32,8 +32,9 @@ autocmd BufWritePost * call defx#redraw()
 
 autocmd FileType defx call s:defx_my_settings()
 function! s:defx_my_settings() abort
+  set relativenumber
   " Define mappings
-nnoremap <silent><buffer><expr> <CR>
+  nnoremap <silent><buffer><expr> <CR>
   \ defx#do_action('open')
   nnoremap <silent><buffer><expr> c
   \ defx#do_action('copy')
@@ -92,6 +93,10 @@ nnoremap <silent><buffer><expr> <CR>
   \ defx#do_action('redraw')
   nnoremap <silent><buffer><expr> <C-g>
   \ defx#do_action('print')
+  nnoremap <silent><buffer><expr> > defx#do_action('resize',
+  \ defx#get_context().winwidth + 10)
+  nnoremap <silent><buffer><expr> < defx#do_action('resize',
+  \ defx#get_context().winwidth - 10)
   nnoremap <silent><buffer><expr> cd
   \ defx#do_action('change_vim_cwd')
 endfunction

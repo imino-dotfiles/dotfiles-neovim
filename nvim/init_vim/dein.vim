@@ -19,16 +19,21 @@ if dein#load_state(s:dein_dir)
   let s:toml_dir = expand('~/.config/nvim/dein_toml')
 
   " 起動時に読み込むプラグイン群
+
   call dein#load_toml(s:toml_dir . '/dein.toml', {'lazy': 0})
+
+  call dein#load_toml(s:toml_dir . '/crucial.toml', {'lazy': 0})
 
   call dein#load_toml(s:toml_dir . '/denite.toml', {'lazy': 0})
 
   call dein#load_toml(s:toml_dir . '/defx.toml', {'lazy': 0})
 
-  call dein#load_toml(s:toml_dir . '/ide.toml', {'lazy': 0})
-
   " 遅延読み込みしたいプラグイン群
   call dein#load_toml(s:toml_dir . '/dein_lazy.toml', {'lazy': 1})
+
+  call dein#load_toml(s:toml_dir . '/ide.toml', {'lazy': 1})
+
+  call dein#load_toml(s:toml_dir . '/language.toml', {'lazy': 1})
 
   call dein#end()
   call dein#save_state()

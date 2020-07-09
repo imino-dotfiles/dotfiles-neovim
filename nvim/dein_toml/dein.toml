@@ -38,7 +38,4 @@ hook_add = '''
 '''
 
 [[plugins]]
-repo = 'thosakwe/vim-flutter'
-
-[[plugins]]
 repo = 'emonkak/vim-metarw-gist'

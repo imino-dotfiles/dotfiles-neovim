@@ -1,4 +1,5 @@
 nnoremap <Esc><Esc> :nohlsearch<CR><Esc>
+inoremap jj <Esc>
 
 nnoremap <Space> <Nop>
 nnoremap <SID> <Nop>
