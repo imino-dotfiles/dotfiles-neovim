@@ -3,6 +3,10 @@ repo = 'Shougo/dein.vim'
 
 [[plugins]]
 repo = 'ryanoasis/vim-devicons'
+hook_add = '''
+autocmd BufEnter * let &titlestring = expand( WebDevIconsGetFileTypeSymbol() ) . expand("%:@")
+set title
+'''
 
 [[plugins]]
 repo = 'cocopon/iceberg.vim'
